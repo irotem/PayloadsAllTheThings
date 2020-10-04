@@ -12,7 +12,7 @@
     * [Bypass "../" with ";"](#bypass--with-)
     * [Double URL encoding](#double-url-encoding)
     * [UNC Bypass](#unc-bypass)
-    * [NGINX/ALB Bypass](#nginx-alb-bypass)
+    * [NGINX/ALB Bypass](#nginx-bypass)
 * [Path Traversal](#path-traversal)
     * [Interesting Linux files](#interesting-linux-files)
     * [Interesting Windows files](#interesting-windows-files)
@@ -90,7 +90,7 @@ An attacker can inject a Windows UNC share ('\\UNC\share\name') into a software 
 \\localhost\c$\windows\win.ini
 ```
 
-### NGINX/ALB Bypass
+### NGINX-ALB Bypass
 
 NGINX in certain configurations and ALB can block traversal attacks in the route, For example:
 ```http://nginx-server/../../``` will return a 400 bad request.
